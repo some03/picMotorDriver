@@ -1,0 +1,241 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"43 /opt/microchip/xc8/v2.35/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 /opt/microchip/xc8/v2.35/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"9 /home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+[v _i2c_slave_init i2c_slave_init `(v  1 e 1 0 ]
+"22
+[v _i2c_state i2c_state `(v  1 e 1 0 ]
+"44
+[v __isr _isr `II(v  1 e 1 0 ]
+"14 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+[v _i2c_receive_callback i2c_receive_callback `(v  1 e 1 0 ]
+"32
+[v _main main `(v  1 e 1 0 ]
+"962 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1827.h
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"982
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1153
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1215
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S24 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+"1729
+[s S33 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S37 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES37  1 e 1 @153 ]
+"2862
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2914
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"4271
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @537 ]
+"4291
+[v _SSP2ADD SSP2ADD `VEuc  1 e 1 @538 ]
+"4311
+[v _SSP2MSK SSP2MSK `VEuc  1 e 1 @539 ]
+"4331
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @540 ]
+"4393
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @541 ]
+[s S95 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4413
+[s S104 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S106 . 1 `S95 1 . 1 0 `S104 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES106  1 e 1 @541 ]
+"4463
+[v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @542 ]
+[s S121 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"4480
+[u S130 . 1 `S121 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES130  1 e 1 @542 ]
+"4525
+[v _SSP2CON3 SSP2CON3 `VEuc  1 e 1 @543 ]
+"5397
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @670 ]
+"5578
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5618
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5689
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5729
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"6333
+[v _PR4 PR4 `VEuc  1 e 1 @1046 ]
+"6353
+[v _T4CON T4CON `VEuc  1 e 1 @1047 ]
+"7281
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7614
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7692
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
+"7809
+[v _SSP2IE SSP2IE `VEb  1 e 0 @1184 ]
+"7812
+[v _SSP2IF SSP2IF `VEb  1 e 0 @160 ]
+"6 /home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+[v _state state `uc  1 e 1 0 ]
+"7
+[v _value value `uc  1 e 1 0 ]
+"9 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+[v _duty duty `us  1 e 2 0 ]
+"10
+[v _a a `ui  1 e 2 0 ]
+"32
+[v _main main `(v  1 e 1 0 ]
+{
+"59
+} 0
+"9 /home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+[v _i2c_slave_init i2c_slave_init `(v  1 e 1 0 ]
+{
+"20
+} 0
+"44
+[v __isr _isr `II(v  1 e 1 0 ]
+{
+"50
+} 0
+"22
+[v _i2c_state i2c_state `(v  1 e 1 0 ]
+{
+"43
+} 0
+"14 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+[v _i2c_receive_callback i2c_receive_callback `(v  1 e 1 0 ]
+{
+[v i2c_receive_callback@data data `us  1 p 2 63 ]
+"30
+} 0
+"10 /opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 /opt/microchip/xc8/v2.35/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 62 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 61 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 52 ]
+"70
+} 0
+"8 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S489 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S494 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S497 . 4 `l 1 i 4 0 `d 1 f 4 0 `S489 1 fAsBytes 4 0 `S494 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S497  1 a 4 46 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 40 ]
+[s S566 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S569 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S566 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S569  1 a 2 50 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 45 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 44 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 39 ]
+"8
+[v ___flmul@b b `d  1 p 4 26 ]
+[v ___flmul@a a `d  1 p 4 30 ]
+"205
+} 0
+"4 /opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 20 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 13 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 18 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 17 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
