@@ -5,9 +5,9 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v2.35/pic/dat/en_msgs.txt -cn \
   -h+dist/default/production/pic_motor_driver.X.production.sym \
   --cmf=dist/default/production/pic_motor_driver.X.production.cmf -z \
-  -Q16F1827 -o/tmp/xcXMmdhhH --defsym=__MPLAB_BUILD=1 \
+  -Q16F1827 -o/tmp/xcXCMpBcj --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/pic_motor_driver.X.production.map \
-  --md=/tmp/xcXpGgdgo.dat -E1 -ver=XC8 Compiler --acfsm=1493 \
+  --md=/tmp/xcXffDcac.dat -E1 -ver=XC8 Compiler --acfsm=1493 \
   -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh -ASTRING=00h-0FFhx16 \
   -ACONST=00h-0FFhx16 -AENTRY=00h-0FFhx16 -ACOMMON=070h-07Fh \
   -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh \
@@ -28,7 +28,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=ENTRY -k /tmp/xcXeppPIG.o \
+  -pcinit=CODE -pfunctab=ENTRY -k /tmp/xcXECoGnF.o \
   dist/default/production/pic_motor_driver.X.production.o 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Machine type is 16F1827
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXeppPIG.o
+/tmp/xcXECoGnF.o
                 end_init                             12       12        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
@@ -49,14 +49,14 @@ dist/default/production/pic_motor_driver.X.production.o
                 config                             8007     8007        2        0       4
                 idloc                              8000     8000        4        0       5
                 text9                               27D      27D      1B4        8       0
-                text8                               6B7      6B7       23        8       0
+                text8                               6B6      6B6       23        8       0
                 text7                                26       26      257        8       0
                 text6                               5D2      5D2       75        8       0
                 text5                               526      526       AC        8       0
                 text4                               431      431       F5        8       0
-                text3                               647      647       47        8       0
-                text1                               6DA      6DA       14        8       0
-                maintext                            68E      68E       29        8       0
+                text3                               647      647       46        8       0
+                text1                               6D9      6D9       14        8       0
+                maintext                            68D      68D       29        8       0
                 cstackBANK0                          20       20       49       20       1
                 cstackCOMMON                         70       70        E       70       1
                 bssBANK1                             A0       A0        6       A0       1
@@ -69,14 +69,14 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intentry                              4        4        E         0
                 reset_vec                             0        0        2         0
                 text9                               27D      27D      1B4         0
-                text8                               6B7      6B7       23         0
+                text8                               6B6      6B6       23         0
                 text7                                26       26      257         0
                 text6                               5D2      5D2       75         0
                 text5                               526      526       AC         0
                 text4                               431      431       F5         0
-                text3                               647      647       47         0
-                text1                               6DA      6DA       14         0
-                maintext                            68E      68E       29         0
+                text3                               647      647       46         0
+                text1                               6D9      6D9       14         0
+                maintext                            68D      68D       29         0
 
         CLASS   STRCODE        
 
@@ -244,7 +244,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  0006EA  0006EE         8       0  CODE        2
+                intentry                       000004  0006E9  0006ED         8       0  CODE        2
                 bssBANK1                       0000A0  000006  0000A6        A0       1  BANK1       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
                 cstackBANK0                    000020  00004F  00006F        20       1  BANK0       1
@@ -260,12 +260,12 @@ UNUSED ADDRESS RANGES
         BANK4            00220-0024F              30           1
         BIGRAM           02000-0216F             170           1
         CODE             00002-00003               2           2
-                         006EE-00FFF             112
+                         006ED-00FFF             113
         CONST            00002-00003               2           2
-                         006EE-00FFF             100
+                         006ED-00FFF             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         006EE-00FFF             100
+                         006ED-00FFF             100
         RAM              0006F-0006F               1           1
                          000A6-000EF              4A
                          00120-0016F              50
@@ -304,9 +304,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
         STRCODE          00002-00003               2           2
-                         006EE-00FFF             912
+                         006ED-00FFF             913
         STRING           00002-00003               2           2
-                         006EE-00FFF             100
+                         006ED-00FFF             100
 
                                   Symbol Table
 
@@ -430,7 +430,7 @@ __Hsfr6                       sfr6         00000
 __Hsfr7                       sfr7         00000
 __Hsfr8                       sfr8         00000
 __Hsfr9                       sfr9         00000
-__Hspace_0                    (abs)        006EE
+__Hspace_0                    (abs)        006ED
 __Hspace_1                    (abs)        000A6
 __Hspace_2                    (abs)        00000
 __Hspace_3                    (abs)        00000
@@ -533,10 +533,10 @@ __Lspace_4                    (abs)        00000
 __Lstack                      stack        00000
 __Lstrings                    strings      00000
 __Ltext                       text         00000
-__S0                          (abs)        006EE
+__S0                          (abs)        006ED
 __S1                          (abs)        000A6
 __S3                          (abs)        00000
-__Umul8_16                    text8        006B7
+__Umul8_16                    text8        006B6
 __Umul8_16@multiplicand       cstackCOMMON 00070
 __Umul8_16@multiplier         cstackCOMMON 00078
 __Umul8_16@product            cstackCOMMON 00074
@@ -575,7 +575,7 @@ ___xxtofl@arg                 cstackCOMMON 0007A
 ___xxtofl@exp                 cstackCOMMON 00079
 ___xxtofl@sign                cstackCOMMON 00078
 ___xxtofl@val                 cstackCOMMON 00070
-__end_of__Umul8_16            text8        006DA
+__end_of__Umul8_16            text8        006D9
 __end_of___fldiv              text9        00431
 __end_of___flmul              text7        0027D
 __end_of___fltol              text6        00647
@@ -583,9 +583,9 @@ __end_of___xxtofl             text5        005D2
 __end_of__initialization      cinit        00022
 __end_of__isr                 intentry     00012
 __end_of_i2c_receive_callback text4        00526
-__end_of_i2c_slave_init       text1        006EE
-__end_of_i2c_state            text3        0068E
-__end_of_main                 maintext     006B7
+__end_of_i2c_slave_init       text1        006ED
+__end_of_i2c_state            text3        0068D
+__end_of_main                 maintext     006B6
 __initialization              cinit        00014
 __isr                         intentry     00004
 __pbssBANK0                   bssBANK0     00069
@@ -594,22 +594,22 @@ __pcstackBANK0                cstackBANK0  00020
 __pcstackBANK1                cstackBANK1  00000
 __pcstackCOMMON               cstackCOMMON 00070
 __pintentry                   intentry     00004
-__pmaintext                   maintext     0068E
-__ptext1                      text1        006DA
+__pmaintext                   maintext     0068D
+__ptext1                      text1        006D9
 __ptext3                      text3        00647
 __ptext4                      text4        00431
 __ptext5                      text5        00526
 __ptext6                      text6        005D2
 __ptext7                      text7        00026
-__ptext8                      text8        006B7
+__ptext8                      text8        006B6
 __ptext9                      text9        0027D
 _a                            bssBANK0     00069
 _duty                         bssBANK0     0006B
 _i2c_receive_callback         text4        00431
 _i2c_receive_callback$804     cstackBANK0  00063
-_i2c_slave_init               text1        006DA
+_i2c_slave_init               text1        006D9
 _i2c_state                    text3        00647
-_main                         maintext     0068E
+_main                         maintext     0068D
 _state                        bssBANK0     0006E
 _value                        bssBANK0     0006D
 btemp                         (abs)        0007E
@@ -638,10 +638,10 @@ Module		Function		Class		Link	Load	Size
 
 16F1827.c
 		__isr          		CODE           	0004	0000	14
-		_i2c_state     		CODE           	0647	0000	71
-		_i2c_slave_init		CODE           	06DA	0000	20
+		_i2c_state     		CODE           	0647	0000	70
+		_i2c_slave_init		CODE           	06D9	0000	20
 
-16F1827.c estimated size: 105
+16F1827.c estimated size: 104
 
 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 		___flmul       		CODE           	0026	0000	599
@@ -659,7 +659,7 @@ Module		Function		Class		Link	Load	Size
 /opt/microchip/xc8/v2.35/pic/sources/c99/common/fltol.c estimated size: 117
 
 /opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-		__Umul8_16     		CODE           	06B7	0000	35
+		__Umul8_16     		CODE           	06B6	0000	35
 
 /opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c estimated size: 35
 
@@ -669,7 +669,7 @@ shared
 shared estimated size: 14
 
 main.c
-		_main          		CODE           	068E	0000	41
+		_main          		CODE           	068D	0000	41
 		_i2c_receive_callback		CODE           	0431	0000	245
 
 main.c estimated size: 286

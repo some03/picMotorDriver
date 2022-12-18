@@ -4345,6 +4345,7 @@ void __attribute__((picinterrupt((""))))isr();
 # 6 "main.c" 2
 
 
+#pragma config WDTE=OFF
 
 uint16_t duty=0;
 uint16_t d3=0,d4=0;
@@ -4398,10 +4399,7 @@ void main(){
 
 
     while(1){
-
-
-
-
+        ;
     }
 
 }

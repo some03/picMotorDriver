@@ -14,22 +14,22 @@
 $dist/default/production/pic_motor_driver.X.production.o
 cinit CODE 0 14 14 12 2 1
 idloc IDLOC 5 8000 8000 4 2 1
-text1 CODE 0 6DA 6DA 14 2 1
-text3 CODE 0 647 647 47 2 1
+text1 CODE 0 6D9 6D9 14 2 1
+text3 CODE 0 647 647 46 2 1
 text4 CODE 0 431 431 F5 2 1
 text5 CODE 0 526 526 AC 2 1
 text6 CODE 0 5D2 5D2 75 2 1
 text7 CODE 0 26 26 257 2 1
-text8 CODE 0 6B7 6B7 23 2 1
+text8 CODE 0 6B6 6B6 23 2 1
 text9 CODE 0 27D 27D 1B4 2 1
-maintext CODE 0 68E 68E 29 2 1
+maintext CODE 0 68D 68D 29 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
 cstackBANK0 BANK0 1 20 20 49 1 1
 intentry CODE 0 4 4 E 2 1
 bssBANK0 BANK0 1 69 69 6 1 1
 bssBANK1 BANK1 1 A0 A0 6 1 1
 config CONFIG 4 8007 8007 2 2 1
-$/tmp/xcXeppPIG.o
+$/tmp/xcXECoGnF.o
 idloc IDLOC 5 8000 8000 4 2 1
 reset_vec CODE 0 0 0 2 2 1
 end_init CODE 0 12 12 2 2 1
@@ -51,9 +51,9 @@ BANK2 120-16F 1
 BANK3 1A0-1EF 1
 BANK4 220-24F 1
 CONST 2-3 2
-CONST 6EE-FFF 2
+CONST 6ED-FFF 2
 ENTRY 2-3 2
-ENTRY 6EE-FFF 2
+ENTRY 6ED-FFF 2
 SFR10 500-56F 1
 SFR11 580-5EF 1
 SFR12 600-66F 1
@@ -77,7 +77,7 @@ SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 CODE 2-3 2
-CODE 6EE-FFF 2
+CODE 6ED-FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -91,9 +91,9 @@ SFR9 480-4EF 1
 BIGRAM 2000-216F 1
 EEDATA F000-F0FF 2
 STRCODE 2-3 2
-STRCODE 6EE-FFF 2
+STRCODE 6ED-FFF 2
 STRING 2-3 2
-STRING 6EE-FFF 2
+STRING 6ED-FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -108,32 +108,32 @@ STRING 6EE-FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/pic_motor_driver.X.production.o
-14 cinit CODE >1125:/tmp/xcXooHPjm.s
-14 cinit CODE >1128:/tmp/xcXooHPjm.s
-14 cinit CODE >1161:/tmp/xcXooHPjm.s
-15 cinit CODE >1162:/tmp/xcXooHPjm.s
-16 cinit CODE >1163:/tmp/xcXooHPjm.s
-17 cinit CODE >1164:/tmp/xcXooHPjm.s
-18 cinit CODE >1165:/tmp/xcXooHPjm.s
-19 cinit CODE >1166:/tmp/xcXooHPjm.s
-1A cinit CODE >1167:/tmp/xcXooHPjm.s
-1B cinit CODE >1171:/tmp/xcXooHPjm.s
-1C cinit CODE >1172:/tmp/xcXooHPjm.s
-1D cinit CODE >1173:/tmp/xcXooHPjm.s
-1E cinit CODE >1174:/tmp/xcXooHPjm.s
-1F cinit CODE >1175:/tmp/xcXooHPjm.s
-20 cinit CODE >1176:/tmp/xcXooHPjm.s
-21 cinit CODE >1177:/tmp/xcXooHPjm.s
-22 cinit CODE >1183:/tmp/xcXooHPjm.s
-22 cinit CODE >1185:/tmp/xcXooHPjm.s
-23 cinit CODE >1186:/tmp/xcXooHPjm.s
-24 cinit CODE >1187:/tmp/xcXooHPjm.s
-4 intentry CODE >44:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6 intentry CODE >45:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-B intentry CODE >46:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-C intentry CODE >47:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-D intentry CODE >48:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-10 intentry CODE >50:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+14 cinit CODE >1126:/tmp/xcXIKoaem.s
+14 cinit CODE >1129:/tmp/xcXIKoaem.s
+14 cinit CODE >1162:/tmp/xcXIKoaem.s
+15 cinit CODE >1163:/tmp/xcXIKoaem.s
+16 cinit CODE >1164:/tmp/xcXIKoaem.s
+17 cinit CODE >1165:/tmp/xcXIKoaem.s
+18 cinit CODE >1166:/tmp/xcXIKoaem.s
+19 cinit CODE >1167:/tmp/xcXIKoaem.s
+1A cinit CODE >1168:/tmp/xcXIKoaem.s
+1B cinit CODE >1172:/tmp/xcXIKoaem.s
+1C cinit CODE >1173:/tmp/xcXIKoaem.s
+1D cinit CODE >1174:/tmp/xcXIKoaem.s
+1E cinit CODE >1175:/tmp/xcXIKoaem.s
+1F cinit CODE >1176:/tmp/xcXIKoaem.s
+20 cinit CODE >1177:/tmp/xcXIKoaem.s
+21 cinit CODE >1178:/tmp/xcXIKoaem.s
+22 cinit CODE >1184:/tmp/xcXIKoaem.s
+22 cinit CODE >1186:/tmp/xcXIKoaem.s
+23 cinit CODE >1187:/tmp/xcXIKoaem.s
+24 cinit CODE >1188:/tmp/xcXIKoaem.s
+4 intentry CODE >43:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6 intentry CODE >44:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+B intentry CODE >45:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+C intentry CODE >46:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+D intentry CODE >47:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+10 intentry CODE >49:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 27D text9 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
 27D text9 CODE >26:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
 283 text9 CODE >27:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
@@ -234,17 +234,17 @@ D intentry CODE >48:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 427 text9 CODE >182:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
 42B text9 CODE >183:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
 430 text9 CODE >185:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcdiv.c
-6B7 text8 CODE >4:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6B8 text8 CODE >5:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6BA text8 CODE >6:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6C1 text8 CODE >51:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6C5 text8 CODE >52:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6C9 text8 CODE >53:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6C9 text8 CODE >54:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6CE text8 CODE >55:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6D0 text8 CODE >56:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6D5 text8 CODE >59:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
-6D9 text8 CODE >60:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6B6 text8 CODE >4:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6B7 text8 CODE >5:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6B9 text8 CODE >6:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6C0 text8 CODE >51:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6C4 text8 CODE >52:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6C8 text8 CODE >53:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6C8 text8 CODE >54:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6CD text8 CODE >55:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6CF text8 CODE >56:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6D4 text8 CODE >59:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
+6D8 text8 CODE >60:/opt/microchip/xc8/v2.35/pic/sources/c99/common/Umul8_16.c
 26 text7 CODE >8:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 26 text7 CODE >17:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 2C text7 CODE >18:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
@@ -391,68 +391,67 @@ F6 text7 CODE >127:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 5C8 text5 CODE >42:/opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
 5C9 text5 CODE >43:/opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
 5D1 text5 CODE >44:/opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
-431 text4 CODE >15:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-431 text4 CODE >18:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-441 text4 CODE >20:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-447 text4 CODE >21:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-44A text4 CODE >21:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-44C text4 CODE >22:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-4AB text4 CODE >23:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-4B6 text4 CODE >24:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-4B7 text4 CODE >27:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-4B8 text4 CODE >29:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-517 text4 CODE >30:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-519 text4 CODE >31:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-525 text4 CODE >35:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+431 text4 CODE >16:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+431 text4 CODE >19:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+441 text4 CODE >21:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+447 text4 CODE >22:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+44A text4 CODE >22:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+44C text4 CODE >23:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+4AB text4 CODE >24:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+4B6 text4 CODE >25:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+4B7 text4 CODE >28:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+4B8 text4 CODE >30:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+517 text4 CODE >31:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+519 text4 CODE >32:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+525 text4 CODE >36:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
 647 text3 CODE >22:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 647 text3 CODE >23:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 64D text3 CODE >24:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 652 text3 CODE >26:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 653 text3 CODE >28:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 659 text3 CODE >29:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-65A text3 CODE >30:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+65E text3 CODE >30:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 65F text3 CODE >31:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-660 text3 CODE >32:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-664 text3 CODE >33:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-666 text3 CODE >36:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-66C text3 CODE >37:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-676 text3 CODE >38:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-67B text3 CODE >39:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-67D text3 CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-682 text3 CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-687 text3 CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-68A text3 CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-68D text3 CODE >43:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6DA text1 CODE >9:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6DA text1 CODE >10:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6DD text1 CODE >11:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6DF text1 CODE >12:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E1 text1 CODE >13:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E3 text1 CODE >14:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E5 text1 CODE >15:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E7 text1 CODE >16:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E8 text1 CODE >17:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6E9 text1 CODE >18:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6EB text1 CODE >19:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-6ED text1 CODE >20:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
-68E maintext CODE >37:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-68E maintext CODE >38:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-693 maintext CODE >39:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-695 maintext CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-697 maintext CODE >43:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-698 maintext CODE >44:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-69A maintext CODE >45:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-69B maintext CODE >46:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-69D maintext CODE >49:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6A0 maintext CODE >50:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6A2 maintext CODE >51:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6A5 maintext CODE >52:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6A8 maintext CODE >53:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6AB maintext CODE >54:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6AE maintext CODE >55:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6B1 maintext CODE >57:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6B4 maintext CODE >60:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
-6B4 maintext CODE >65:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+663 text3 CODE >32:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+665 text3 CODE >35:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+66B text3 CODE >36:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+675 text3 CODE >37:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+67A text3 CODE >38:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+67C text3 CODE >41:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+681 text3 CODE >41:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+686 text3 CODE >41:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+689 text3 CODE >41:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+68C text3 CODE >42:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6D9 text1 CODE >9:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6D9 text1 CODE >10:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6DC text1 CODE >11:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6DE text1 CODE >12:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E0 text1 CODE >13:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E2 text1 CODE >14:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E4 text1 CODE >15:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E6 text1 CODE >16:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E7 text1 CODE >17:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6E8 text1 CODE >18:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6EA text1 CODE >19:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+6EC text1 CODE >20:/home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
+68D maintext CODE >38:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+68D maintext CODE >39:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+692 maintext CODE >40:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+694 maintext CODE >43:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+696 maintext CODE >44:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+697 maintext CODE >45:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+699 maintext CODE >46:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+69A maintext CODE >47:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+69C maintext CODE >50:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+69F maintext CODE >51:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6A1 maintext CODE >52:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6A4 maintext CODE >53:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6A7 maintext CODE >54:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6AA maintext CODE >55:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6AD maintext CODE >56:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6B0 maintext CODE >58:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6B3 maintext CODE >61:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+6B3 maintext CODE >63:/home/utida/MPLABXProjects/pic_motor_driver.X/main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -467,7 +466,7 @@ F6 text7 CODE >127:/opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 %SYMTAB
 _a 69 0 BANK0 1 bssBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___latbits 1 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-__Hspace_0 6EE 0 ABS 0 - -
+__Hspace_0 6ED 0 ABS 0 - -
 __Hspace_1 A6 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
@@ -476,45 +475,45 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __Hstrings 0 0 ABS 0 strings -
 i2c_receive_callback@data 5F 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 _PEIE 5E 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXeppPIG.o
+___sp 0 0 STACK 2 stack /tmp/xcXECoGnF.o
 __isr 8 0 CODE 0 intentry dist/default/production/pic_motor_driver.X.production.o
 _duty 6B 0 BANK0 1 bssBANK0 dist/default/production/pic_motor_driver.X.production.o
-_main D1C 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
+_main D1A 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-start 24 0 CODE 0 init /tmp/xcXeppPIG.o
+start 24 0 CODE 0 init /tmp/xcXECoGnF.o
 ___flmul@aexp 4C 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___flmul@bexp 4D 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___flmul@prod 4E 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___flmul@sign 47 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___flmul@temp 52 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
-intlevel1 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
-intlevel2 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
-intlevel3 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
-intlevel4 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
-intlevel5 0 0 ENTRY 0 functab /tmp/xcXeppPIG.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXECoGnF.o
 _OSCCONbits 99 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
 _ANSELA 18C 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _ANSELB 18D 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-__end_of__Umul8_16 DB4 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
+__end_of__Umul8_16 DB2 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
 _CCPR3L 311 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _CCPR4L 318 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__end_of_i2c_state D1C 0 CODE 0 text3 dist/default/production/pic_motor_driver.X.production.o
+__end_of_i2c_state D1A 0 CODE 0 text3 dist/default/production/pic_motor_driver.X.production.o
 ___fldiv@aexp 39 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___fldiv@bexp 38 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___fldiv@sign 31 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
-__Umul8_16 D6E 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
+__Umul8_16 D6C 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
 __end_of___fldiv 862 0 CODE 0 text9 dist/default/production/pic_motor_driver.X.production.o
 __end_of___flmul 4FA 0 CODE 0 text7 dist/default/production/pic_motor_driver.X.production.o
 __end_of___fltol C8E 0 CODE 0 text6 dist/default/production/pic_motor_driver.X.production.o
 __Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_driver.X.production.o
-___stackhi 0 0 ABS 0 - /tmp/xcXeppPIG.o
-___stacklo 0 0 ABS 0 - /tmp/xcXeppPIG.o
+___stackhi 0 0 ABS 0 - /tmp/xcXECoGnF.o
+___stacklo 0 0 ABS 0 - /tmp/xcXECoGnF.o
 ___fldiv@a 20 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 ___fldiv@b 24 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 _i2c_receive_callback 862 0 CODE 0 text4 dist/default/production/pic_motor_driver.X.production.o
@@ -524,12 +523,12 @@ _i2c_state C8E 0 CODE 0 text3 dist/default/production/pic_motor_driver.X.product
 _SSP2CON1bits 21D 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 start_initialization 28 0 CODE 0 cinit dist/default/production/pic_motor_driver.X.production.o
 _SSP2CON2bits 21E 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-_i2c_slave_init DB4 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
+_i2c_slave_init DB2 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 __pcstackBANK1 0 0 BANK1 1 cstackBANK1 dist/default/production/pic_motor_driver.X.production.o
 _SSP2IE 4A0 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _SSP2IF A0 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xcXeppPIG.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXECoGnF.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -594,7 +593,7 @@ ___xxtofl@exp 79 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_drive
 ___xxtofl@val 70 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_driver.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 4 config -
-__end_of_i2c_slave_init DDC 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
+__end_of_i2c_slave_init DDA 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -673,12 +672,12 @@ _GIE 5F 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _PR2 1B 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _PR4 416 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _RB4 6C 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
-__S0 6EE 0 ABS 0 - -
+__S0 6ED 0 ABS 0 - -
 __S1 A6 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 ___xxtofl A4C 0 CODE 0 text5 dist/default/production/pic_motor_driver.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcXeppPIG.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXECoGnF.o
 __end_of___xxtofl BA4 0 CODE 0 text5 dist/default/production/pic_motor_driver.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
@@ -707,7 +706,7 @@ __Lbank28 0 0 BANK28 1 bank28 -
 __Lbank29 0 0 BANK29 1 bank29 -
 __Lbank30 0 0 BANK30 1 bank30 -
 __Lbank31 0 0 BANK31 1 bank31 -
-__pmaintext D1C 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
+__pmaintext D1A 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
 __Lbigram 0 0 ABS 0 bigram -
 __Umul8_16@multiplier 78 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_driver.X.production.o
 __Lcommon 0 0 ABS 0 common -
@@ -736,13 +735,13 @@ __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 4 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
-__ptext1 DB4 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
+__ptext1 DB2 0 CODE 0 text1 dist/default/production/pic_motor_driver.X.production.o
 __ptext3 C8E 0 CODE 0 text3 dist/default/production/pic_motor_driver.X.production.o
 __ptext4 862 0 CODE 0 text4 dist/default/production/pic_motor_driver.X.production.o
 __ptext5 A4C 0 CODE 0 text5 dist/default/production/pic_motor_driver.X.production.o
 __ptext6 BA4 0 CODE 0 text6 dist/default/production/pic_motor_driver.X.production.o
 __ptext7 4C 0 CODE 0 text7 dist/default/production/pic_motor_driver.X.production.o
-__ptext8 D6E 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
+__ptext8 D6C 0 CODE 0 text8 dist/default/production/pic_motor_driver.X.production.o
 __ptext9 4FA 0 CODE 0 text9 dist/default/production/pic_motor_driver.X.production.o
 ?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_driver.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
@@ -751,8 +750,8 @@ __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __Umul8_16@word_mpld 76 0 COMMON 1 cstackCOMMON dist/default/production/pic_motor_driver.X.production.o
 ___fltol@sign1 5D 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - /tmp/xcXeppPIG.o
-___heap_lo 0 0 ABS 0 - /tmp/xcXeppPIG.o
+___heap_hi 0 0 ABS 0 - /tmp/xcXECoGnF.o
+___heap_lo 0 0 ABS 0 - /tmp/xcXECoGnF.o
 ___fltol@f1 54 0 BANK0 1 cstackBANK0 dist/default/production/pic_motor_driver.X.production.o
 __end_of__initialization 44 0 CODE 0 cinit dist/default/production/pic_motor_driver.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
@@ -764,7 +763,7 @@ _SSP2BUF 219 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _SSP2MSK 21B 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 __Hend_init 28 0 CODE 0 end_init -
 __end_of__isr 24 0 CODE 0 intentry dist/default/production/pic_motor_driver.X.production.o
-__end_of_main D6E 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
+__end_of_main D6C 0 CODE 0 maintext dist/default/production/pic_motor_driver.X.production.o
 _T2CON 1C 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _T4CON 417 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
 _TRISA 8C 0 ABS 0 - dist/default/production/pic_motor_driver.X.production.o
@@ -808,7 +807,7 @@ __pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production/pic_motor_driver.X.pro
 %SEGMENTS
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 4F 1
-intentry 0 4 8 6EA 2
+intentry 0 4 8 6E9 2
 reset_vec 0 0 0 2 2
 bssBANK1 1 A0 A0 6 1
 # %NOTES Section

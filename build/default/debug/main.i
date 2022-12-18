@@ -4345,8 +4345,10 @@ void __attribute__((picinterrupt((""))))isr();
 # 6 "main.c" 2
 
 
+#pragma config WDTE=OFF
 
 uint16_t duty=0;
+uint16_t d3=0,d4=0;
 unsigned int a;
 unsigned int b;
 
@@ -4361,11 +4363,15 @@ void i2c_receive_callback(uint16_t data){
         duty=((float)data/127)*4*256;
         CCPR3L=(duty&0b1111111100)>>2;
         CCPR4L=0x00;
+
+
     }
     else{
         duty=((float)data/127)*4*256;
         CCPR3L=0x00;
         CCPR4L=(duty&0b1111111100)>>2;
+
+
     }
 }
 
@@ -4391,9 +4397,9 @@ void main(){
 
     i2c_slave_init();
 
+
     while(1){
-
-
+        ;
     }
 
 }

@@ -534,132 +534,140 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6749
 [; ;/opt/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1827.h: 6749: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"9 main.c
-[; ;main.c: 9: uint16_t duty=0;
+"8 main.c
+[; ;main.c: 8: 
+[p x WDTE=OFF ]
+"10
+[; ;main.c: 10: 
 [v _duty `us ~T0 @X0 1 e ]
 [i _duty
 -> -> 0 `i `us
 ]
-"10
-[; ;main.c: 10: unsigned int a;
-[v _a `ui ~T0 @X0 1 e ]
 "11
-[; ;main.c: 11: unsigned int b;
+[; ;main.c: 11:     if(a){
+[v _d3 `us ~T0 @X0 1 e ]
+[i _d3
+-> -> 0 `i `us
+]
+[v _d4 `us ~T0 @X0 1 e ]
+[i _d4
+-> -> 0 `i `us
+]
+"12
+[; ;main.c: 12:         data=(~data)+0b1;
+[v _a `ui ~T0 @X0 1 e ]
+"13
+[; ;main.c: 13:         duty=((float)data/127)*4*256;
 [v _b `ui ~T0 @X0 1 e ]
-"14
-[; ;main.c: 14: void i2c_receive_callback(uint16_t data){
+"16
+[; ;main.c: 16: 
 [v _i2c_receive_callback `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _i2c_receive_callback ]
 [v _data `us ~T0 @X0 1 r1 ]
 [f ]
-"17
-[; ;main.c: 17:     a=(data>>7)&0b1;
-[e = _a & >> -> _data `ui -> 7 `i -> -> 1 `i `ui ]
 "19
-[; ;main.c: 19:     if(a){
+[; ;main.c: 19:     else{
+[e = _a & >> -> _data `ui -> 7 `i -> -> 1 `i `ui ]
+"21
+[; ;main.c: 21:         CCPR3L=0x00;
 [e $ ! != _a -> -> 0 `i `ui 355  ]
 {
-"20
-[; ;main.c: 20:         data=(~data)+0b1;
-[e = _data -> + ~ -> _data `ui -> -> 1 `i `ui `us ]
-"21
-[; ;main.c: 21:         duty=((float)data/127)*4*256;
-[e = _duty -> * * / -> _data `f -> -> 127 `i `f -> -> 4 `i `f -> -> 256 `i `f `us ]
 "22
-[; ;main.c: 22:         CCPR3L=(duty&0b1111111100)>>2;
-[e = _CCPR3L -> >> & -> _duty `ui -> -> 1020 `i `ui -> 2 `i `uc ]
+[; ;main.c: 22:         CCPR4L=(duty&0b1111111100)>>2;
+[e = _data -> + ~ -> _data `ui -> -> 1 `i `ui `us ]
 "23
-[; ;main.c: 23:         CCPR4L=0x00;
-[e = _CCPR4L -> -> 0 `i `uc ]
+[; ;main.c: 23: 
+[e = _duty -> * * / -> _data `f -> -> 127 `i `f -> -> 4 `i `f -> -> 256 `i `f `us ]
 "24
-[; ;main.c: 24:     }
+[; ;main.c: 24: 
+[e = _CCPR3L -> >> & -> _duty `ui -> -> 1020 `i `ui -> 2 `i `uc ]
+"25
+[; ;main.c: 25:     }
+[e = _CCPR4L -> -> 0 `i `uc ]
+"28
+[; ;main.c: 28: void main(){
 }
 [e $U 356  ]
-"25
-[; ;main.c: 25:     else{
+"29
+[; ;main.c: 29:     OSCCONbits.IRCF=0b1110;
 [e :U 355 ]
 {
-"26
-[; ;main.c: 26:         duty=((float)data/127)*4*256;
+"30
+[; ;main.c: 30:     OSCCONbits.SCS=0b11;;
 [e = _duty -> * * / -> _data `f -> -> 127 `i `f -> -> 4 `i `f -> -> 256 `i `f `us ]
-"27
-[; ;main.c: 27:         CCPR3L=0x00;
+"31
+[; ;main.c: 31: 
 [e = _CCPR3L -> -> 0 `i `uc ]
-"28
-[; ;main.c: 28:         CCPR4L=(duty&0b1111111100)>>2;
+"32
+[; ;main.c: 32: 
 [e = _CCPR4L -> >> & -> _duty `ui -> -> 1020 `i `ui -> 2 `i `uc ]
-"29
-[; ;main.c: 29:     }
+"35
+[; ;main.c: 35:     ANSELA=0x00;
 }
 [e :U 356 ]
-"30
-[; ;main.c: 30: }
+"36
+[; ;main.c: 36:     ANSELB=0x00;
 [e :UE 354 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"32
-[; ;main.c: 32: void main(){
+"38
+[; ;main.c: 38: 
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"33
-[; ;main.c: 33:     OSCCONbits.IRCF=0b1110;
-[e = . . _OSCCONbits 1 2 -> -> 14 `i `uc ]
-"34
-[; ;main.c: 34:     OSCCONbits.SCS=0b11;;
-[e = . . _OSCCONbits 1 0 -> -> 3 `i `uc ]
-"37
-[; ;main.c: 37:     TRISB=0b00100100;
-[e = _TRISB -> -> 36 `i `uc ]
-"38
-[; ;main.c: 38:     TRISA=0x00;
-[e = _TRISA -> -> 0 `i `uc ]
 "39
-[; ;main.c: 39:     ANSELA=0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
+[; ;main.c: 39: 
+[e = . . _OSCCONbits 1 2 -> -> 14 `i `uc ]
 "40
-[; ;main.c: 40:     ANSELB=0x00;
-[e = _ANSELB -> -> 0 `i `uc ]
-"41
-[; ;main.c: 41:     RB4=0;
-[e = _RB4 -> -> 0 `i `b ]
+[; ;main.c: 40:     CCP3CON=0b00001100;
+[e = . . _OSCCONbits 1 0 -> -> 3 `i `uc ]
+"43
+[; ;main.c: 43:     T2CON=0b00000100;
+[e = _TRISB -> -> 36 `i `uc ]
 "44
-[; ;main.c: 44:     CCP3CON=0b00001100;
-[e = _CCP3CON -> -> 12 `i `uc ]
+[; ;main.c: 44:     T4CON=0b00000100;
+[e = _TRISA -> -> 0 `i `uc ]
 "45
-[; ;main.c: 45:     CCP4CON=0b00001100;
-[e = _CCP4CON -> -> 12 `i `uc ]
+[; ;main.c: 45:     PR2=255;
+[e = _ANSELA -> -> 0 `i `uc ]
 "46
-[; ;main.c: 46:     CCPTMRS=0b00010000;
-[e = _CCPTMRS -> -> 16 `i `uc ]
+[; ;main.c: 46:     PR4=255;
+[e = _ANSELB -> -> 0 `i `uc ]
 "47
-[; ;main.c: 47:     T2CON=0b00000100;
-[e = _T2CON -> -> 4 `i `uc ]
-"48
-[; ;main.c: 48:     T4CON=0b00000100;
-[e = _T4CON -> -> 4 `i `uc ]
-"49
-[; ;main.c: 49:     PR2=255;
-[e = _PR2 -> -> 255 `i `uc ]
+[; ;main.c: 47: 
+[e = _RB4 -> -> 0 `i `b ]
 "50
-[; ;main.c: 50:     PR4=255;
-[e = _PR4 -> -> 255 `i `uc ]
+[; ;main.c: 50: 
+[e = _CCP3CON -> -> 12 `i `uc ]
+"51
+[; ;main.c: 51:     while(1){
+[e = _CCP4CON -> -> 12 `i `uc ]
 "52
-[; ;main.c: 52:     i2c_slave_init();
-[e ( _i2c_slave_init ..  ]
+[; ;main.c: 52:         ;
+[e = _CCPTMRS -> -> 16 `i `uc ]
+"53
+[; ;main.c: 53:     }
+[e = _T2CON -> -> 4 `i `uc ]
 "54
-[; ;main.c: 54:     while(1){
+[; ;main.c: 54: 
+[e = _T4CON -> -> 4 `i `uc ]
+"55
+[; ;main.c: 55: }
+[e = _PR2 -> -> 255 `i `uc ]
+"56
+[e = _PR4 -> -> 255 `i `uc ]
+"58
+[e ( _i2c_slave_init ..  ]
+"61
 [e :U 359 ]
 {
-"57
-[; ;main.c: 57:     }
+"63
 }
 [e :U 358 ]
 [e $U 359  ]
 [e :U 360 ]
-"59
-[; ;main.c: 59: }
+"65
 [e :UE 357 ]
 }

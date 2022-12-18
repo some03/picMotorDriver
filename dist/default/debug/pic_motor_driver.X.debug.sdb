@@ -23,11 +23,11 @@
 [v _i2c_slave_init i2c_slave_init `(v  1 e 1 0 ]
 "22
 [v _i2c_state i2c_state `(v  1 e 1 0 ]
-"44
+"43
 [v __isr _isr `II(v  1 e 1 0 ]
-"14 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+"16 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
 [v _i2c_receive_callback i2c_receive_callback `(v  1 e 1 0 ]
-"32
+"38
 [v _main main `(v  1 e 1 0 ]
 "962 /opt/microchip/mplabx/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8/pic/include/proc/pic16f1827.h
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
@@ -67,7 +67,7 @@
 [v _SSP2STAT SSP2STAT `VEuc  1 e 1 @540 ]
 "4393
 [v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @541 ]
-[s S95 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S96 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
@@ -77,13 +77,13 @@
 `uc 1 WCOL 1 0 :1:7 
 ]
 "4413
-[s S104 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S105 . 1 `uc 1 SSPM 1 0 :4:0 
 ]
-[u S106 . 1 `S95 1 . 1 0 `S104 1 . 1 0 ]
-[v _SSP2CON1bits SSP2CON1bits `VES106  1 e 1 @541 ]
+[u S107 . 1 `S96 1 . 1 0 `S105 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES107  1 e 1 @541 ]
 "4463
 [v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @542 ]
-[s S121 . 1 `uc 1 SEN 1 0 :1:0 
+[s S122 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -93,8 +93,8 @@
 `uc 1 GCEN 1 0 :1:7 
 ]
 "4480
-[u S130 . 1 `S121 1 . 1 0 ]
-[v _SSP2CON2bits SSP2CON2bits `VES130  1 e 1 @542 ]
+[u S131 . 1 `S122 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES131  1 e 1 @542 ]
 "4525
 [v _SSP2CON3 SSP2CON3 `VEuc  1 e 1 @543 ]
 "5397
@@ -125,35 +125,35 @@
 [v _state state `uc  1 e 1 0 ]
 "7
 [v _value value `uc  1 e 1 0 ]
-"9 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+"10 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
 [v _duty duty `us  1 e 2 0 ]
-"10
+"12
 [v _a a `ui  1 e 2 0 ]
-"32
+"38
 [v _main main `(v  1 e 1 0 ]
 {
-"59
+"65
 } 0
 "9 /home/utida/MPLABXProjects/pic_motor_driver.X/16F1827.c
 [v _i2c_slave_init i2c_slave_init `(v  1 e 1 0 ]
 {
 "20
 } 0
-"44
+"43
 [v __isr _isr `II(v  1 e 1 0 ]
 {
-"50
+"49
 } 0
 "22
 [v _i2c_state i2c_state `(v  1 e 1 0 ]
 {
-"43
+"42
 } 0
-"14 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
+"16 /home/utida/MPLABXProjects/pic_motor_driver.X/main.c
 [v _i2c_receive_callback i2c_receive_callback `(v  1 e 1 0 ]
 {
 [v i2c_receive_callback@data data `us  1 p 2 63 ]
-"30
+"36
 } 0
 "10 /opt/microchip/xc8/v2.35/pic/sources/c99/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -183,17 +183,17 @@
 "8 /opt/microchip/xc8/v2.35/pic/sources/c99/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S489 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S491 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S494 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S497 . 4 `l 1 i 4 0 `d 1 f 4 0 `S489 1 fAsBytes 4 0 `S494 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S497  1 a 4 46 ]
+[s S496 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S499 . 4 `l 1 i 4 0 `d 1 f 4 0 `S491 1 fAsBytes 4 0 `S496 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S499  1 a 4 46 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 40 ]
-[s S566 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S568 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S569 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S566 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S569  1 a 2 50 ]
+[u S571 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S568 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S571  1 a 2 50 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 45 ]
 "11

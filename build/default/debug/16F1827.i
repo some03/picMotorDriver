@@ -4360,7 +4360,6 @@ void i2c_state(){
     switch(state){
         case 0b00001001:
             value=SSP2BUF;
-            RB4=1;
             if(SSP2CON1bits.SSPOV)
                 SSP2CON1bits.SSPOV=0;
             if(SSP2CON2bits.SEN)

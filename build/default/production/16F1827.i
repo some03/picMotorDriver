@@ -4343,7 +4343,7 @@ uint8_t value;
 void i2c_slave_init(){
     SSP2CON1=0b00100110;
     SSP2CON2=0b00000001;
-    SSP2ADD=4<<1;
+    SSP2ADD=5<<1;
     SSP2STAT=0b10000000;
     SSP2IF=0;
     SSP2IE=1;
@@ -4360,7 +4360,6 @@ void i2c_state(){
     switch(state){
         case 0b00001001:
             value=SSP2BUF;
-            RB4=1;
             if(SSP2CON1bits.SSPOV)
                 SSP2CON1bits.SSPOV=0;
             if(SSP2CON2bits.SEN)

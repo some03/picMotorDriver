@@ -5,6 +5,7 @@
 #include "16F1827_I2C.h"
 #define state1 0b00001001//receive complite and startbit detected last was address
 #define state2 0b00101001//receive complite and startbit detected last was data
+#pragma config WDTE=OFF
 
 uint16_t duty=0;
 uint16_t d3=0,d4=0;
