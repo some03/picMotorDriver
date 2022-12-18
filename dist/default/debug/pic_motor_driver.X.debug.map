@@ -5,8 +5,8 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v2.35/pic/dat/en_msgs.txt -cn \
   -h+dist/default/debug/pic_motor_driver.X.debug.sym \
   --cmf=dist/default/debug/pic_motor_driver.X.debug.cmf -z -Q16F1827 \
-  -o/tmp/xcXLgGcHL --defsym=__MPLAB_BUILD=1 \
-  -Mdist/default/debug/pic_motor_driver.X.debug.map --md=/tmp/xcXPNcEgH.dat \
+  -o/tmp/xcXoDKDkh --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/debug/pic_motor_driver.X.debug.map --md=/tmp/xcXoLOgcN.dat \
   -E1 -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
   -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 -AENTRY=00h-0FFhx16 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -28,7 +28,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE \
-  -pcinit=CODE -pfunctab=ENTRY -k /tmp/xcXlHIOgo.o \
+  -pcinit=CODE -pfunctab=ENTRY -k /tmp/xcXKiAjkI.o \
   dist/default/debug/pic_motor_driver.X.debug.o 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Machine type is 16F1827
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXlHIOgo.o
+/tmp/xcXKiAjkI.o
                 end_init                             12       12        2        8       0
                 reset_vec                             0        0        3        0       0
                 config                             8007     8007        2        0       4
